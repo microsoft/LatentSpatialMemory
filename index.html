@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mirage | Latent Spatial Memory for Video World Models</title>
+    <meta
+      name="description"
+      content="Mirage introduces latent spatial memory for geometrically consistent video world models."
+    />
+    <link rel="icon" href="./assets/logos/microsoft-favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/logos/microsoft-favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Mirage home">
+        <img src="./assets/logos/microsoft-logo.svg" alt="Microsoft" />
+      </a>
+      <nav aria-label="Project sections">
+        <a href="#promo">Promo</a>
+        <a href="#method">Concept</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#results">Results</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-reel" aria-hidden="true">
+          <video class="is-active" src="./assets/videos/00000000/ours.mp4" autoplay muted loop playsinline></video>
+          <video src="./assets/videos/00000001/ours.mp4" autoplay muted loop playsinline></video>
+        </div>
+
+        <div class="hero-title reveal">
+          <h1>Latent Spatial Memory</h1>
+          <p class="subtitle">for Video World Models</p>
+          <p class="authors">
+            <span><a href="https://lhmd.top/">Weijie Wang<sup>1*</sup></a></span>
+            <span><a href="https://ziplab.co/people/">Haoyu Zhao<sup>1*</sup></a></span>
+            <span><a href="https://www.microsoft.com/en-us/research/people/yifanyang/">Yifan Yang<sup>2</sup></a></span>
+            <span><a href="https://github.com/Chenfeng1271">Feng Chen<sup>3</sup></a></span>
+            <span><a href="https://steve-zeyu-zhang.github.io/">Zeyu Zhang<sup>1</sup></a></span>
+            <span><a href="https://hexy.tech/">Yefei He<sup>1</sup></a></span>
+            <span><a href="https://zichengduan.github.io/">Zicheng Duan<sup>3</sup></a></span>
+            <span><a href="https://donydchen.github.io/">Donny Y. Chen<sup>4</sup></a></span>
+            <span><a href="https://www.microsoft.com/en-us/research/people/yuqyang/">Yuqing Yang<sup>2</sup></a></span>
+            <span><a href="https://bohanzhuang.github.io/">Bohan Zhuang<sup>1</sup></a></span>
+          </p>
+          <p class="affiliations">
+            <span><sup>1</sup> Zhejiang University · <sup>2</sup> Microsoft Research · <sup>3</sup> Adelaide University · <sup>4</sup> Monash University</span>
+            <span><sup>*</sup> Equal contribution</span>
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://arxiv.org/abs/2604.24764">Paper</a>
+            <a class="button" href="https://github.com/microsoft/LatentSpatialMemory">Code</a>
+            <a class="button" href="#promo">Promo Video</a>
+            <a class="button" href="#results">Results</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats strip" aria-label="Key results">
+        <span><strong>10.57×</strong> faster generation</span>
+        <span><strong>55×</strong> lower 3D cache memory</span>
+        <span><strong>70.36</strong> WorldScore average</span>
+      </section>
+
+      <section id="promo" class="paper-section promo-section">
+        <div class="section-intro reveal">
+          <div>
+            <h2>Promo Video</h2>
+            <p>A short preview of video world modeling with persistent latent spatial memory.</p>
+          </div>
+        </div>
+        <div class="video-frame reveal">
+          <iframe
+            src="https://www.youtube.com/embed/zY3E3iD2nkM"
+            title="Mirage promo video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="method" class="paper-section method-section">
+        <div class="section-intro reveal">
+          <div>
+            <h2>Latent Spatial Memory</h2>
+            <p>Mirage stores static scene content as 3D latent tokens, then reads and updates that cache directly during generation.</p>
+          </div>
+        </div>
+        <div class="figure-stack">
+          <figure class="paper-figure reveal">
+            <img src="./assets/figures/concept_hd.png" alt="Latent spatial memory compared with RGB point-cloud memory" />
+            <figcaption>Latent spatial memory keeps persistent 3D scene context directly in latent space, avoiding the RGB render-and-reencode loop used by point-cloud memory.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="architecture" class="paper-section architecture-section">
+        <div class="section-intro reveal">
+          <div>
+            <h2>Mirage Architecture</h2>
+            <p>Mirage initializes, reads, and updates a persistent latent spatial memory.</p>
+          </div>
+        </div>
+        <figure class="paper-figure wide reveal">
+          <img src="./assets/figures/pipeline_hd.png" alt="Mirage architecture with cache initialization readout update pipeline" />
+          <figcaption>Mirage architecture initializes a latent cache from the first frame, reads it for each target view, and writes updated static content back across generated chunks.</figcaption>
+        </figure>
+      </section>
+
+      <section id="results" class="paper-section efficiency-section">
+        <div class="section-intro reveal">
+          <div>
+            <h2>Efficiency</h2>
+            <p>Mirage reduces repeated 3D cache rendering while preserving strong world modeling quality.</p>
+          </div>
+        </div>
+        <figure class="paper-figure efficiency-figure reveal">
+          <img src="./assets/figures/efficiency.png" alt="Efficiency comparison of Mirage against video world model baselines" />
+          <figcaption>Efficiency comparison showing Mirage's generation speed, cache memory reduction, and WorldScore performance.</figcaption>
+        </figure>
+      </section>
+
+      <section id="comparison" class="results-section">
+        <div class="section-intro reveal">
+          <div>
+            <h2>Qualitative Evaluation</h2>
+            <p>Each row compares the same trajectory and conditioning across Mirage and four baselines.</p>
+          </div>
+        </div>
+        <div class="method-header" aria-hidden="true">
+          <span>Mirage</span>
+          <span>Spatia</span>
+          <span>Voyager</span>
+          <span>Gen3C</span>
+          <span>VMem</span>
+        </div>
+        <div class="comparison-list reveal" id="comparisonList"></div>
+      </section>
+
+      <section class="bibtex-section" aria-labelledby="bibtex-title">
+        <div class="section-intro reveal">
+          <div>
+            <h2 id="bibtex-title">BibTeX</h2>
+          </div>
+        </div>
+        <pre class="bibtex-box reveal"><code>@article{wang2026mirage,
+  title   = {Mirage: Latent Spatial Memory for Video World Models},
+  author  = {Wang, Weijie and Zhao, Haoyu and Yang, Yifan and Chen, Feng and Zhang, Zeyu and He, Yefei and Duan, Zicheng and Chen, Donny Y. and Yang, Yuqing and Zhuang, Bohan},
+  journal = {arXiv preprint},
+  year    = {2026}
+}</code></pre>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="./assets/logos/microsoft-logo.svg" alt="Microsoft" />
+      <span>Mirage · Latent Spatial Memory for Video World Models</span>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
