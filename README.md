@@ -22,7 +22,7 @@
     <a href="https://github.com/Chenfeng1271">Feng Chen</a><sup>3</sup> &nbsp;
     <a href="https://steve-zeyu-zhang.github.io/">Zeyu Zhang</a><sup>1</sup> &nbsp;
     <a href="https://hexy.tech/">Yefei He</a><sup>1</sup> &nbsp;
-    <a href="https://zichengduan.github.io/">Zicheng Duan</a><sup>3</sup> &nbsp;
+    <a href="https://zichengduan.github.io/">Zicheng Duan</a><sup>3</sup><br/>
     <a href="https://donydchen.github.io/">Donny Y. Chen</a><sup>4</sup> &nbsp;
     <a href="https://www.microsoft.com/en-us/research/people/yuqyang/">Yuqing Yang</a><sup>2</sup> &nbsp;
     <a href="https://bohanzhuang.github.io/">Bohan Zhuang</a><sup>1</sup>
