@@ -7,7 +7,7 @@
     <a href="https://arxiv.org/abs/2604.24764">
           <img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?style=for-the-badge&labelColor=111111" alt="Paper" />
     </a>
-    <a href="https://microsoft.github.io/LatentSpatialMemory/">
+    <a href="https://aka.ms/latent-spatial-memory/">
           <img src="https://img.shields.io/badge/Project-Page-2ea44f?style=for-the-badge&labelColor=111111" alt="Project Page" />
     </a>
     <a href="https://github.com/microsoft/LatentSpatialMemory">
@@ -17,7 +17,7 @@
 
   <p>
     <a href="https://lhmd.top/">Weijie Wang</a><sup>1,*</sup> &nbsp;
-    <a href="https://ziplab.co/people/">Haoyu Zhao</a><sup>1,*</sup> &nbsp;
+    <a href="https://zhao-haoyu.github.io/">Haoyu Zhao</a><sup>1,*</sup> &nbsp;
     <a href="https://www.microsoft.com/en-us/research/people/yifanyang/">Yifan Yang</a><sup>2</sup> &nbsp;
     <a href="https://github.com/Chenfeng1271">Feng Chen</a><sup>3</sup> &nbsp;
     <a href="https://steve-zeyu-zhang.github.io/">Zeyu Zhang</a><sup>1</sup> &nbsp;
