@@ -4,7 +4,7 @@
   <h1>Latent Spatial Memory for Video World Models</h1>
 
   <p align="center">
-    <a href="https://arxiv.org/abs/2604.24764">
+    <a href="https://arxiv.org/abs/2606.09828">
           <img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?style=for-the-badge&labelColor=111111" alt="Paper" />
     </a>
     <a href="https://aka.ms/latent-spatial-memory/">
