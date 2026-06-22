@@ -1,0 +1,9 @@
+model: vchitect_2_t2v
+
+runs_root: ${oc.env:MODEL_PATH}/Vchitect-2.0
+
+resolution: [768, 432]
+generate_type: t2v
+
+frames: 40
+fps: 8

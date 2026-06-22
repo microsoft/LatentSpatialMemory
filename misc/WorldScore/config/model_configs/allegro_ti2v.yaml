@@ -1,0 +1,9 @@
+model: allegro_ti2v
+
+runs_root: ${oc.env:MODEL_PATH}/Allegro
+
+resolution: [1280, 720]
+generate_type: i2v
+
+frames: 88
+fps: 15

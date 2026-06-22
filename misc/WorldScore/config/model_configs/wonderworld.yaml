@@ -1,0 +1,10 @@
+model: wonderworld
+
+runs_root: ${oc.env:MODEL_PATH}/WonderWorld
+
+resolution: [512, 512]
+generate_type: i2v
+
+# camera parameters
+camera_speed: 0.002
+camera_type: pytorch3d

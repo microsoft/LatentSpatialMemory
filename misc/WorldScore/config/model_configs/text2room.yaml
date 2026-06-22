@@ -1,0 +1,10 @@
+model: text2room
+
+runs_root: ${oc.env:MODEL_PATH}/text2room
+
+resolution: [512, 512]
+generate_type: i2v
+
+# camera parameters
+camera_speed: 1.0
+camera_type: tensor

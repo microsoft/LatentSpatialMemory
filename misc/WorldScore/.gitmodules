@@ -1,0 +1,42 @@
+[submodule "thirdparty/DROID-SLAM"]
+	path = thirdparty/DROID-SLAM
+	url = https://github.com/princeton-vl/DROID-SLAM.git
+[submodule "thirdparty/GroundingDINO"]
+	path = thirdparty/GroundingDINO
+	url = https://github.com/IDEA-Research/GroundingDINO.git
+[submodule "thirdparty/sam2"]
+	path = thirdparty/sam2
+	url = https://github.com/haoyi-duan/sam2.git
+[submodule "thirdparty/VideoCrafter"]
+	path = thirdparty/VideoCrafter
+	url = https://github.com/AILab-CVC/VideoCrafter.git
+[submodule "thirdparty/DynamiCrafter"]
+	path = thirdparty/DynamiCrafter
+	url = https://github.com/Doubiiu/DynamiCrafter.git
+[submodule "thirdparty/flash-attention"]
+	path = thirdparty/flash-attention
+	url = https://github.com/Dao-AILab/flash-attention.git
+[submodule "thirdparty/t2v_turbo"]
+	path = thirdparty/t2v_turbo
+	url = https://github.com/Ji4chenLi/t2v-turbo.git
+[submodule "thirdparty/Vchitect2"]
+	path = thirdparty/Vchitect2
+	url = https://github.com/Vchitect/Vchitect-2.0.git
+[submodule "thirdparty/Allegro"]
+	path = thirdparty/Allegro
+	url = https://github.com/rhymes-ai/Allegro.git
+[submodule "thirdparty/EasyAnimate"]
+	path = thirdparty/EasyAnimate
+	url = https://github.com/aigc-apps/EasyAnimate.git
+[submodule "thirdparty/Grounded-Segment-Anything"]
+	path = thirdparty/Grounded-Segment-Anything
+	url = https://github.com/IDEA-Research/Grounded-Segment-Anything.git
+[submodule "thirdparty/SEA-RAFT"]
+	path = thirdparty/SEA-RAFT
+	url = https://github.com/princeton-vl/SEA-RAFT.git
+[submodule "thirdparty/LTX-Video"]
+	path = thirdparty/LTX-Video
+	url = https://github.com/Lightricks/LTX-Video.git
+[submodule "Wan2.1"]
+	path = thirdparty/Wan2.1
+	url = https://github.com/Wan-Video/Wan2.1.git

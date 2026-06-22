@@ -1,0 +1,9 @@
+model: t2v_turbo_t2v
+
+runs_root: ${oc.env:MODEL_PATH}/t2v_turbo_t2v
+
+resolution: [512, 320]
+generate_type: t2v
+
+frames: 48
+fps: 16

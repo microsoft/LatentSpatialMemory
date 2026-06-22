@@ -1,0 +1,8 @@
+_target_: world_generators.t2v_turbo.T2VTurbo
+model_name: t2v_turbo_t2v
+config: thirdparty/t2v_turbo/configs/inference_t2v_512_v2.0.yaml
+model_ckpt: world_generators/checkpoints/videocrafter_t2v_512_v2.ckpt
+lora_path: world_generators/checkpoints/t2v_turbo_unet_lora.pt
+num_frames: 48
+fps: 16
+generation_type: t2v

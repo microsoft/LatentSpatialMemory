@@ -1,0 +1,9 @@
+model: 4dfy
+
+runs_root: ${oc.env:MODEL_PATH}/4dfy
+
+resolution: [256, 256]
+generate_type: t2v
+
+frames: 120
+fps: 30

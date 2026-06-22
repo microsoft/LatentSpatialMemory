@@ -90,6 +90,54 @@
   </tr>
 </table>
 
+
+## Installation
+
+1. Prepare python environment by `uv sync`
+2. (Optional) Install pre-commit by `uv run pre-commit install`
+
+You can also create an environment using Conda by `conda env create -f environment.yml`.
+
+## For training
+
+Run training with:
+
+```bash
+uv run accelerate launch scripts/train.py \
+  --data-path data/train \
+  --output-dir outputs/train \
+  --model-config "data/Wan-AI/Wan2.2-TI2V-5B/diffusion_pytorch_model*.safetensors" \
+  --model-config data/Wan-AI/Wan2.2-TI2V-5B/Wan2.2_VAE.pth \
+  --model-config data/Wan-AI/Wan2.2-TI2V-5B/models_t5_umt5-xxl-enc-bf16.pth \
+  --model-config data/control_weight_8500.safetensors \
+  --tokenizer-path data/Wan-AI/Wan2.2-TI2V-5B/google/umt5-xxl \
+  --stage vace,lora \
+  --batch-size 1 \
+  --gradient-accumulation-steps 4 \
+  --max-steps 10000
+```
+
+## For inference
+
+Run inference with:
+
+```bash
+uv run scripts/infer.py \
+  --geometry-path data/example/geometry.npz \
+  --output-dir outputs/ \
+  --model-config "data/Wan-AI/Wan2.2-TI2V-5B/diffusion_pytorch_model*.safetensors" \
+  --model-config data/Wan-AI/Wan2.2-TI2V-5B/Wan2.2_VAE.pth \
+  --model-config data/Wan-AI/Wan2.2-TI2V-5B/models_t5_umt5-xxl-enc-bf16.pth \
+  --model-config data/control_weight_8500.safetensors \
+  --tokenizer-path data/Wan-AI/Wan2.2-TI2V-5B/google/umt5-xxl \
+  --prompt "a camera move through the scene"
+```
+
+## Acknowledgements
+
+This repository is built upon open-source projects including [Spatia](https://github.com/ZhaoJingjing713/Spatia), [Wan-Video](https://github.com/Wan-Video/Wan2.2), [MapAnything](https://github.com/facebookresearch/map-anything), [SAM3](https://github.com/facebookresearch/sam3) and [WorldScore](https://github.com/haoyi-duan/WorldScore).
+
+
 ## Citation
 
 If you find this project useful, please cite:

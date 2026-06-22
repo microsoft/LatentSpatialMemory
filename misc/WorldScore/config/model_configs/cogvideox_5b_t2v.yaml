@@ -1,0 +1,9 @@
+model: cogvideox_5b_t2v
+
+runs_root: ${oc.env:MODEL_PATH}/CogVideoX_5b_t2v
+
+resolution: [720, 480]
+generate_type: t2v
+
+frames: 49
+fps: 8

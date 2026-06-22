@@ -1,0 +1,5 @@
+_target_: world_generators.minimax.Minimax
+model_name: minimax_i2v
+generation_type: i2v
+url: https://api.minimaxi.chat/v1/video_generation
+model: video-01

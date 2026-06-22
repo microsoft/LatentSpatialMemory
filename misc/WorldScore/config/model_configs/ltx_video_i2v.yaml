@@ -1,0 +1,9 @@
+model: ltx_video_i2v
+
+runs_root: ${oc.env:MODEL_PATH}/LTX-Video
+
+resolution: [768, 512]
+generate_type: i2v # or t2v
+
+frames: 121
+fps: 24

@@ -1,0 +1,6 @@
+_target_: world_generators.easyanimate.EasyAnimate
+model_name: easyanimate_i2v
+sample_size: [768, 1344]
+video_length: 49
+fps: 8
+generation_type: i2v

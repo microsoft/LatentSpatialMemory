@@ -1,0 +1,9 @@
+model: videocrafter1_t2v
+
+runs_root: ${oc.env:MODEL_PATH}/VideoCrafter1_t2v
+
+resolution: [1024, 576]
+generate_type: t2v
+
+frames: 16
+fps: 8

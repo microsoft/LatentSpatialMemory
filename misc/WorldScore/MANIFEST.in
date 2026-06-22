@@ -1,0 +1,2 @@
+# MANIFEST.in
+include worldscore/benchmark/metrics/third_party/sam2/configs/*/*.yaml

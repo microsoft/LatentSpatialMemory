@@ -1,0 +1,8 @@
+_target_: world_generators.videocrafter.VideoCrafter
+model_name: videocrafter1_i2v
+ckpt_path: world_generators/checkpoints/videocrafter_i2v_512_v1.ckpt
+config: thirdparty/VideoCrafter/configs/inference_i2v_512_v1.0.yaml
+height: 320
+width: 512
+fps: 8
+generation_type: i2v

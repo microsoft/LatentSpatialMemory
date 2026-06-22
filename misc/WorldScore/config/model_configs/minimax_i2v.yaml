@@ -1,0 +1,9 @@
+model: minimax_i2v
+
+runs_root: ${oc.env:MODEL_PATH}/Minimax
+
+resolution: [1072, 720]
+generate_type: i2v
+
+frames: 141
+fps: 25

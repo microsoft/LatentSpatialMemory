@@ -1,0 +1,9 @@
+model: dynamicrafter_512_i2v
+
+runs_root: ${oc.env:MODEL_PATH}/DynamiCrafter_512_i2v
+
+resolution: [512, 320]
+generate_type: i2v
+
+frames: 50
+fps: 10

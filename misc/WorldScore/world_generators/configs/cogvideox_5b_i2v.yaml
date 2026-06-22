@@ -1,0 +1,4 @@
+_target_: world_generators.cogvideox.CogVideoX
+model_name: cogvideox_5b_i2v
+model_path: THUDM/CogVideoX-5b-i2v 
+generation_type: i2v

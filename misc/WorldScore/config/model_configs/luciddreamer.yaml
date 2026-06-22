@@ -1,0 +1,10 @@
+model: luciddreamer
+
+runs_root: ${oc.env:MODEL_PATH}/LucidDreamer
+
+resolution: [512, 512]
+generate_type: i2v
+
+# camera parameters
+camera_speed: 2
+camera_type: pytorch3d_tensor

@@ -1,0 +1,4 @@
+_target_: world_generators.gen3.Gen3
+model_name:  gen_3_i2v
+generation_type: i2v
+model_id: gen3a_turbo

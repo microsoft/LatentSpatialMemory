@@ -1,0 +1,14 @@
+_target_: world_generators.dynamicrafter.DynamiCrafter
+model_name: dynamicrafter_1024_i2v
+ckpt_path: thirdparty/DynamiCrafter/checkpoints/dynamicrafter_1024_v1/model.ckpt
+config: thirdparty/DynamiCrafter/configs/inference_1024_v1.0.yaml
+height: 576
+width: 1024
+video_length: 50
+frame_stride: 10
+guidance_rescale: 0.7
+timestep_spacing: uniform_trailing 
+text_input: True
+perframe_ae: True
+generation_type: i2v
+

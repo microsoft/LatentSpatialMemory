@@ -1,0 +1,9 @@
+model: easyanimate_i2v
+
+runs_root: ${oc.env:MODEL_PATH}/EasyAnimate
+
+resolution: [1344, 768]
+generate_type: i2v
+
+frames: 49
+fps: 8

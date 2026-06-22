@@ -1,0 +1,15 @@
+accelerate==0.33.0
+diffusers==0.28.0
+numpy==1.24.4
+torch==2.4.1
+tqdm==4.66.2
+transformers==4.40.1
+xformers==0.0.28.post1
+einops==0.7.0
+decord==0.6.0
+sentencepiece==0.1.99
+imageio
+imageio-ffmpeg
+ftfy
+bs4
+huggingface-hub==0.25.2

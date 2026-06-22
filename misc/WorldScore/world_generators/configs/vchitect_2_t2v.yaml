@@ -1,0 +1,4 @@
+_target_: world_generators.vchitect.Vchitect
+model_name:  vchitect_2_t2v
+model_path:  world_generators/checkpoints/vchitect
+generation_type: t2v

@@ -1,0 +1,9 @@
+model: wan2.1_i2v
+
+runs_root: ${oc.env:MODEL_PATH}/Wan2.1
+
+resolution: [832, 480]
+generate_type: i2v
+
+frames: 81
+fps: 16

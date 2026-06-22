@@ -1,0 +1,8 @@
+focal_length: 500
+benchmark_root: ${oc.env:WORLDSCORE_PATH}/WorldScore
+dataset_root: ${oc.env:DATA_PATH}/WorldScore-Dataset
+output_dir: worldscore_output
+
+regenerate: False
+
+frames: 50

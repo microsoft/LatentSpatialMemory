@@ -1,0 +1,9 @@
+model: gen_3_i2v
+
+runs_root: ${oc.env:MODEL_PATH}/Gen3
+
+resolution: [1280, 768]
+generate_type: i2v
+
+frames: 253
+fps: 24

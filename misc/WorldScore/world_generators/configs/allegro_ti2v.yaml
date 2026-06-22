@@ -1,0 +1,4 @@
+_target_: world_generators.allegro_ti2v.Allegro
+model_name:  allegro_ti2v
+model_path:  world_generators/checkpoints/allegro_ti2v
+generation_type: i2v
