@@ -11,13 +11,12 @@
           <img src="https://img.shields.io/badge/Project-Page-2ea44f?style=for-the-badge&labelColor=111111" alt="Project Page" />
     </a>
     <a href="https://github.com/microsoft/LatentSpatialMemory">
-          <img src="https://img.shields.io/badge/Code-Coming%20Soon-555555?style=for-the-badge&logo=github&labelColor=111111" alt="Code" />
+      <img src="https://img.shields.io/badge/Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" alt="Code" />
     </a>
 
 <a href="https://github.com/microsoft/world-r1">
       <img src="https://img.shields.io/badge/World--R1-Series-7c3aed?style=for-the-badge&logo=github&labelColor=111111" alt="World-R1 series" />
 </a>
-
 
   </p>
 
@@ -89,6 +88,53 @@
     <td align="center"><h3>70.36</h3>WorldScore average</td>
   </tr>
 </table>
+
+## Installation
+
+You can easily prepare python environment by `uv sync`.
+
+## Data Processing
+
+The data preparation pipeline is documented in [data_process/README.md](data_process/README.md). Please follow that guide.
+
+## For training
+
+Run training with:
+
+```bash
+uv run accelerate launch scripts/train.py \
+  --data-path data/train \
+  --output-dir outputs/train \
+  --model-config "data/Wan-AI/Wan2.2-TI2V-5B/diffusion_pytorch_model*.safetensors" \
+  --model-config data/Wan-AI/Wan2.2-TI2V-5B/Wan2.2_VAE.pth \
+  --model-config data/Wan-AI/Wan2.2-TI2V-5B/models_t5_umt5-xxl-enc-bf16.pth \
+  --tokenizer-path data/Wan-AI/Wan2.2-TI2V-5B/google/umt5-xxl \
+  --stage vace,lora \
+  --batch-size 1 \
+  --gradient-accumulation-steps 4 \
+  --max-steps 10000
+```
+
+## For inference
+
+Run inference with:
+
+```bash
+uv run scripts/infer.py \
+  --geometry-path data/sample/geometry.npz \
+  --output-dir outputs/test \
+  --model-config "data/Wan-AI/Wan2.2-TI2V-5B/diffusion_pytorch_model*.safetensors" \
+  --model-config data/Wan-AI/Wan2.2-TI2V-5B/Wan2.2_VAE.pth \
+  --model-config data/Wan-AI/Wan2.2-TI2V-5B/models_t5_umt5-xxl-enc-bf16.pth \
+  --tokenizer-path data/Wan-AI/Wan2.2-TI2V-5B/google/umt5-xxl \
+  --vace-checkpoint outputs/vace.safetensors \
+  --lora-checkpoint outputs/lora.safetensors \
+  --prompt-path data/sample/clip.txt
+```
+
+## Acknowledgements
+
+This repository is built upon open-source projects including [Spatia](https://github.com/ZhaoJingjing713/Spatia), [Wan-Video](https://github.com/Wan-Video/Wan2.2), [MapAnything](https://github.com/facebookresearch/map-anything), [SAM3](https://github.com/facebookresearch/sam3) and [WorldScore](https://github.com/haoyi-duan/WorldScore).
 
 ## Citation
 
