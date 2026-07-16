@@ -1,0 +1,9 @@
+[submodule "misc/sam3"]
+	path = misc/sam3
+	url = https://github.com/facebookresearch/sam3.git
+[submodule "misc/map-anything"]
+	path = misc/map-anything
+	url = https://github.com/facebookresearch/map-anything.git
+[submodule "misc/WorldScore"]
+	path = misc/WorldScore
+	url = https://github.com/haoyi-duan/WorldScore.git
