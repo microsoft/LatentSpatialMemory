@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mirage | Latent Spatial Memory for Video World Models</title>
+    <title>LSM-World | Latent Spatial Memory for Video World Models</title>
     <meta
       name="description"
-      content="Mirage introduces latent spatial memory for geometrically consistent video world models."
+      content="Latent Spatial Memory enables geometrically consistent video world models."
     />
     <link rel="icon" href="./assets/logos/microsoft-favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./assets/logos/microsoft-favicon.svg" />
@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Mirage home">
+      <a class="brand" href="#top" aria-label="LSM-World home">
         <img src="./assets/logos/microsoft-logo.svg" alt="Microsoft" />
       </a>
       <nav aria-label="Project sections">
@@ -83,7 +83,7 @@
         <div class="video-frame reveal">
           <iframe
             src="https://www.youtube.com/embed/zY3E3iD2nkM"
-            title="Mirage promo video"
+            title="LSM-World promo video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
@@ -94,7 +94,7 @@
         <div class="section-intro reveal">
           <div>
             <h2>Latent Spatial Memory</h2>
-            <p>Mirage stores static scene content as 3D latent tokens, then reads and updates that cache directly during generation.</p>
+            <p>Latent Spatial Memory stores static scene content as 3D latent tokens, then reads and updates that cache directly during generation.</p>
           </div>
         </div>
         <div class="figure-stack">
@@ -108,13 +108,13 @@
       <section id="architecture" class="paper-section architecture-section">
         <div class="section-intro reveal">
           <div>
-            <h2>Mirage Architecture</h2>
-            <p>Mirage initializes, reads, and updates a persistent latent spatial memory.</p>
+            <h2>LSM-World Architecture</h2>
+            <p>LSM-World initializes, reads, and updates a persistent latent spatial memory.</p>
           </div>
         </div>
         <figure class="paper-figure wide reveal">
-          <img src="./assets/figures/pipeline_hd.png" alt="Mirage architecture with cache initialization readout update pipeline" />
-          <figcaption>Mirage architecture initializes a latent cache from the first frame, reads it for each target view, and writes updated static content back across generated chunks.</figcaption>
+          <img src="./assets/figures/pipeline_hd.png" alt="LSM-World architecture with cache initialization readout update pipeline" />
+          <figcaption>LSM-World architecture initializes a latent cache from the first frame, reads it for each target view, and writes updated static content back across generated chunks.</figcaption>
         </figure>
       </section>
 
@@ -122,12 +122,12 @@
         <div class="section-intro reveal">
           <div>
             <h2>Efficiency</h2>
-            <p>Mirage reduces repeated 3D cache rendering while preserving strong world modeling quality.</p>
+            <p>LSM-World reduces repeated 3D cache rendering while preserving strong world modeling quality.</p>
           </div>
         </div>
         <figure class="paper-figure efficiency-figure reveal">
-          <img src="./assets/figures/efficiency.png" alt="Efficiency comparison of Mirage against video world model baselines" />
-          <figcaption>Efficiency comparison showing Mirage's generation speed, cache memory reduction, and WorldScore performance.</figcaption>
+          <img src="./assets/figures/efficiency.png" alt="Efficiency comparison of LSM-World against video world model baselines" />
+          <figcaption>Efficiency comparison showing LSM-World's generation speed, cache memory reduction, and WorldScore performance.</figcaption>
         </figure>
       </section>
 
@@ -135,11 +135,11 @@
         <div class="section-intro reveal">
           <div>
             <h2>Qualitative Evaluation</h2>
-            <p>Each row compares the same trajectory and conditioning across Mirage and four baselines.</p>
+            <p>Each row compares the same trajectory and conditioning across LSM-World and four baselines.</p>
           </div>
         </div>
         <div class="method-header" aria-hidden="true">
-          <span>Mirage</span>
+          <span>LSM-World</span>
           <span>Spatia</span>
           <span>Voyager</span>
           <span>Gen3C</span>
@@ -154,7 +154,7 @@
             <h2 id="bibtex-title">BibTeX</h2>
           </div>
         </div>
-        <pre class="bibtex-box reveal"><code>@article{wang2026mirage,
+        <pre class="bibtex-box reveal"><code>@article{wang2026latentspatialmemory,
   title   = {Latent Spatial Memory for Video World Models},
   author  = {Wang, Weijie and Zhao, Haoyu and Yang, Yifan and Chen, Feng and Zhang, Zeyu and He, Yefei and Duan, Zicheng and Chen, Donny Y. and Yang, Yuqing and Zhuang, Bohan},
   journal = {arXiv preprint arXiv:2606.09828},
@@ -165,7 +165,7 @@
 
     <footer class="site-footer">
       <img src="./assets/logos/microsoft-logo.svg" alt="Microsoft" />
-      <span>Mirage · Latent Spatial Memory for Video World Models</span>
+      <span>LSM-World · Latent Spatial Memory for Video World Models</span>
       <a href="#top">Back to top</a>
     </footer>
 
